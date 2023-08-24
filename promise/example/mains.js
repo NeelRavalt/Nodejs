@@ -14,7 +14,7 @@ const p = new Promise((resolve,reject)=>{
     }
 })
 
-p.then((data)=>{
+p.then((data)=>{             //resolve thay to
 
     console.log(data);
 
@@ -26,7 +26,7 @@ p.then((data)=>{
 
     console.log(sum)
 
-}).catch((err)=>{
+}).catch((err)=>{      //reject thay to
 
     console.log("not an even number")
 

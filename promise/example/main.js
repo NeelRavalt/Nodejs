@@ -2,7 +2,7 @@
 
 // const p = new Promise((resolve,reject)=>{
 
-//     setTimeout(()=>{
+//     setTimeout(()=>{    //asynchonous method, timer fun
 
 //         let randomNumber = Math.floor(Math.random()*10);
 
@@ -17,13 +17,13 @@
 
 //             reject("this is not an evennumber")
 //         }
-//     }, 3000 )
+//     }, 3000 )  //3 ssecond pachi fire thay callback
 
 // })
 
 
 
-// p.then((message)=>{
+// p.then((message)=>{     //rewove fun mate
 
 //     console.log(message);
 

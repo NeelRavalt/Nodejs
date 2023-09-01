@@ -17,15 +17,22 @@ form.addEventListener("submit", (e)=>{
 
   // console.log(form);
   const searchtext = form.children[1].Value; 
-  console.log(searchtext)
+  {console.log(searchtext);}
 })
 
-
+//
 
 function getmovies(searchtext){
 
-    axios.get(`${URL}${searchtext}`)
+    axios.get(`${URL}${searchtext}`) //url and data pass thase
     .then((res)=>{
-        console.log(res.data)
+       
+       // console.log(res.data)
+       for( let moive of movies){
+        if(moive.show.image !=null) //amuk jagiya ae image na hoy aene mate
+      let image = document.createElement("img");
+      image.setAttribute("src", moive.show.image.medium);
+      result.append(image)
+    }
     })
 }

@@ -90,5 +90,7 @@
 //         // console.log("error")
 
 //         throw new Error("ek error aagya")
+          //throw new syntaxError ("ek error aagya")
+          //throw new referesError("ek error aagya")
 //     }
 // })

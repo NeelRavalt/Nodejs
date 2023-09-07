@@ -30,9 +30,29 @@ function getmovies(searchtext){
        // console.log(res.data)
        for( let moive of movies){
         if(moive.show.image !=null) //amuk jagiya ae image na hoy aene mate
-      let image = document.createElement("img");
+      
+      
+      const image = document.createElement("img")
       image.setAttribute("src", moive.show.image.medium);
       result.append(image)
     }
     })
 }
+
+
+
+form.addEventListener("submit", (e)=>{
+
+  e.preventDefault();
+
+const searchtext = form.children[1].value;
+
+console.log(searchtext);
+
+removemovies(result)
+
+getMovies(searchtext);
+
+form.children[1].value = " "
+
+})

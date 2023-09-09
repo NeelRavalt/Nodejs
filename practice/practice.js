@@ -51,11 +51,11 @@
 
  
 
-let i =["rahul","mehul","keyur","ganu"];
+// let i =["rahul","mehul","keyur","ganu"];
 
-let [...r]= i
+// let [...r]= i
 
-console.log(r)
+// console.log(r)
 
  
 
@@ -105,11 +105,11 @@ console.log(r)
 //--- javascript--for--of------
 //dec:- also we can say this use to extrect from  {key:"value"} value from onj
 //      but we *cant* directly extract value we need to Object.values(filedName) need to define
-const arr=["one","two","tree","four"]
-for(var num of arr){
-console.log(num)
-}
-console.log("this is distructuring->",...arr)
+// const arr=["one","two","tree","four"]
+// for(var num of arr){
+// console.log(num)
+// }
+// console.log("this is distructuring->",...arr)
 
     /*o/p--> 1> one
                 two
@@ -121,10 +121,10 @@ console.log("this is distructuring->",...arr)
 
 //--- javascript--for--in------
 //dec:- also we can say this use to extrect {key:"value"} key from onj
-const number=["one","two","tree","four"]
-for(var key in arr){
-console.log(key +":"+ number[key])
-}
+// const number=["one","two","tree","four"]
+// for(var key in arr){
+// console.log(key +":"+ number[key])
+// }
     /*o/p--> 2>0:one
                1:two
                2:tree
@@ -134,41 +134,41 @@ console.log(key +":"+ number[key])
 
 
 //using map for adding fild into object
-const person =[{name:"rrr",lname:"patel"},{name:"jjj",lname:"nakr"}]
+// const person =[{name:"rrr",lname:"patel"},{name:"jjj",lname:"nakr"}]
 
-let newPerson = person.map(x=>{
-  let newObj={};
-  newObj["middlename"] = x.name + " " + x.lname;
-  return newObj;
-})
+// let newPerson = person.map(x=>{
+//   let newObj={};
+//   newObj["middlename"] = x.name + " " + x.lname;
+//   return newObj;
+// })
 
-console.log(newPerson)
+// console.log(newPerson)
 
 
 
 
 // convert string into array o/p['r','a','h'..]
-const ss="rahul"
-const rr=[...ss]
-console.log(rr)
+// const ss="rahul"
+// const rr=[...ss]
+// console.log(rr)
 
 
 
 //--------classes in javascript---
 //dec:- classes are a way to define reusable blueprints for creating objects with similar properties and behaviors
-class gun{
-    constructor(name,brand){
-      this.name1=name,
-      this.brand1=brand
-    }
-     guninfo(){
-       console.log( `this gun name is ${this.name} and brand is
-       ${this.brand}`)
-      }  
-  }
-  const gun1= new gun("m24","apple")
+// class gun{
+//     constructor(name,brand){
+//       this.name1=name,
+//       this.brand1=brand
+//     }
+//      guninfo(){
+//        console.log( `this gun name is ${this.name} and brand is
+//        ${this.brand}`)
+//       }  
+//   }
+//   const gun1= new gun("m24","apple")
  
-  gun1.guninfo()
+//   gun1.guninfo()
 
 
 

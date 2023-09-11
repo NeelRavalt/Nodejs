@@ -389,15 +389,18 @@
 
 
 
-/*
+
 
 //find duplicate and left them alone
-                    let array =[1,2,3,3,2,4,5,6,1]
-                    let duplicateNumber = array.filter((ele,index,arr)=>array.indexOf(ele)!=index)
-                    console.log(duplicateNumber)
-//map the function
-                    let mappedArray = array.map((arr)=>arr*2)
-                    console.log(mappedArray)
+                  //  let array =[1,2,3,3,2,4,5,6,1]
+                    // let duplicateNumber = array.filter((ele,index,arr)=>array.indexOf(ele)!=index)
+                    // let another = array.filter((ele,index,arr)=> array.indexOf(ele)!=index)
+
+                    // console.log(another)
+
+                  //map the function
+//                     let mappedArray = array.map((arr)=>arr*2)
+//                     console.log(mappedArray)
 
 
 
@@ -406,11 +409,11 @@
 
                 function maxVal(arr){
                     return arr.reduce(function(pre,cur){
-                        return pre>cur?pre:cur
+                        return pre>cur?pre:cur  // ternary conditional operator (?:)
                 })
                 }
                 console.log(maxVal(array))
-
+/* 
 //find max and min number into array using for loop
                 let array =[2321,3365,43,222,212,554,4671,623,1301]
                 function maax(arr){
@@ -451,7 +454,7 @@
                 
                 
 
-
+ 
                 
   //filter and find both are diffrent 
     .Filter() ==> will search with given condition and give all matcj

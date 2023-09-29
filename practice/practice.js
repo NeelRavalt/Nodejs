@@ -405,135 +405,137 @@
 
 
 // find max and min number into array
-                let array =[4671,2321,3365,43,222,212,554,623,1301]
+//                 let array =[4671,2321,3365,43,222,212,554,623,1301]
 
-                function maxVal(arr){
-                    return arr.reduce(function(pre,cur){
-                        return pre>cur?pre:cur  // ternary conditional operator (?:)
-                })
-                }
-                console.log(maxVal(array))
-/* 
+//                 function maxVal(arr){
+//                     return arr.reduce(function(pre,cur){
+//                         //return pre<cur?pre:cur  //small number
+//                         return pre>cur?pre:cur  // ternary conditional operator (?:)
+//                 })
+//                 }
+//                 console.log(maxVal(array))
+// 
 //find max and min number into array using for loop
-                let array =[2321,3365,43,222,212,554,4671,623,1301]
-                function maax(arr){
-                  let max=arr[0]
-                  let secoundMax= -Infinity
-                  for(let i=0;i<arr.length;i++){
-                       if(arr[i]> max){
-                        secoundMax=max
-                       max = arr[i] 
-                      }else if(arr[i]>secoundMax && arr[i] < max){
-                         secoundMax = arr[i];
-                      }
-                  }
-                  return {max ,secoundMax}
-                }
-                console.log(maax(array))
+                // let array =[2321,3365,43,222,212,554,4671,623,1301]
+                // function maax(arr){
+                //   let max=arr[0]
+                //   let secoundMax= -Infinity
+                //   for(let i=0;i<arr.length;i++){
+                //        if(arr[i]> max){
+                //         secoundMax=max
+                //        max = arr[i] 
+                //       }else if(arr[i]>secoundMax && arr[i] < max){
+                //          secoundMax = arr[i];
+                //       }
+                //   }
+                //   return {max ,secoundMax}
+                // }
+                // console.log(maax(array))
 
 
 
   //find secound highest value
-     1> find max value then Delete the index
-     2> reimpliment the same value
+    // 1> find max value then Delete the index
+    // 2> reimpliment the same value
 
-                let array =[4671,2321,3365,43,222,212,554,623,1301]
+                // let array1 =[4671,2321,3365,43,222,212,554,623,1301]
 
-                function maxVal(arr){
+                // function maxVal(arr){
                     
-                let max = Math.max(...arr);
-                let index= arr.indexOf(max)
-                arr.splice(index,1)
+                // let max = Math.max(...arr);
+                // let index= arr.indexOf(max)
+                // arr.splice(index,1)
 
-                let SecMax = Math.max(...arr);
+                // let SecMax = Math.max(...arr);
+                //         //return max
+                // return SecMax
+                // }
 
-                return SecMax
-                }
-
-                console.log('max value is-->',maxVal(array))      
+                // console.log('max value is-->',maxVal(array1))      
                 
                 
 
  
                 
   //filter and find both are diffrent 
-    .Filter() ==> will search with given condition and give all matcj
-    .find()   ===> also search with condition but it will match the only first given match
-            const objArray=[
-                {name:"n1",age:20},
-                {name:"n2",age:21},
-                {name:"n3",age:22},
-                {name:"n4",age:23},
-                {name:"n5",age:24},
-            ]
-            const r= objArray.filter((item)=>{
-                return item.age>20
-            })
-            console.log(r)      
-            
+    //.Filter() ==> will search with given condition and give all matcj
+    //.find()   ===> also search with condition but it will match the only first given match
+//             const objArray=[
+//                 {name:"n1",age:20},
+//                 {name:"n2",age:21},
+//                 {name:"n3",age:22},
+//                 {name:"n4",age:23},
+//                 {name:"n5",age:24},
+//             ]
+//             const r= objArray.filter((item)=>{
+//                 return item.age>20
+//             })
+//             console.log(r)      
+//            
 
   //for finding missing value from array(sorted) then
-        1> in the function find min and max value from the array 
-        2> also  run the for loop that sort the indexwith <0 and if miising then gives -1 else give same element 
+        // 1> in the function find min and max value from the array 
+        // 2> also  run the for loop that sort the indexwith <0 and if miising then gives -1 else give same element 
 
 
           //-------------------
-                const array= [1,2,3,4,5,6,9,10,11,15]
-                const missEle =[]
+                // const array= [1,2,3,4,5,6,9,10,11,15]
+                // const missEle =[]
 
-                function missValue(arr){
-                    const max = Math.max(...arr)
-                    const min = Math.min(...arr)
+                // function missValue(arr){
+                //     const max = Math.max(...arr)
+                //     const min = Math.min(...arr)
 
-                for(let i=min;i<max; i++){
-                    if(arr.indexOf(i)<0){
-                        missEle.push(i)
-                    }
-                }
-                return (missEle)
-                }
+                // for(let i=min;i<max; i++){
+                //     if(arr.indexOf(i)<0){
+                //         missEle.push(i)
+                //     }
+                // }
+                // return (missEle)
+                // }
 
-                console.log(missValue(array))
+                // console.log(missValue(array))
 
 
          //----------------------
 
          
-                const array = [51, 52, 53, 55, 59, 60, 62];
-                const Dummy = [];
+                // const array = [51, 52, 53, 55, 59, 60, 62];
+                // const Dummy = [];
 
-                function miss(arr) {
-                const max = Math.max(...arr);
-                const min = Math.min(...arr);
+                // function miss(arr) {
+                // const max = Math.max(...arr);
+                // const min = Math.min(...arr);
 
-                for (let i = min; i < max; i++) {
-                    if (!arr.includes(i)<0) {
-                    Dummy.push(i);
-                    }
-                }
+                // for (let i = min; i < max; i++) {
+                //     if (!arr.includes(i)<0) {
+                //     Dummy.push(i);
+                //     }
+                // }
 
-                return Dummy;
-                }
+                // return Dummy;
+                // }
 
-                console.log(miss(array));
-
+                // console.log(miss(array));
 
 
 // get even and odd number from the array
             const number =[7,55,1,2,6,9,8,2,3,4,85]
-
+            
             function gnretEven(arr){
                 const even =arr.filter((ele)=>ele%2===0)
                 const odd =arr.filter((ele)=>ele%2===1)
                 return 'this are even '+ even +'and this are odds'+odd
             }
 
-            console.log('this is even ==>'+ gnretEven(number))  
+            console.log( gnretEven(number))  
 
 
       
+/* 
       //How to find the sum of all elements in array  
                   const arr=[11,44,553,22,5]
+
                   function sumAll(a){
                      let final = a.reduce((pre,cur)=>{
                           return pre+cur

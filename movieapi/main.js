@@ -28,13 +28,15 @@ function getmovies(searchtext){
     .then((res)=>{
        
        // console.log(res.data)
-       for( let moive of movies){
-        if(moive.show.image !=null) //amuk jagiya ae image na hoy aene mate
-      
-      
-      const image = document.createElement("img")
-      image.setAttribute("src", moive.show.image.medium);
-      result.append(image)
+       for( let movie of movies){
+
+        if(movie.show.image != null){
+
+         const image = document.createElement("img");
+
+         image.setAttribute("src", movie.show.image.medium);
+
+         result.append(image)
     }
     })
 }

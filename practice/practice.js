@@ -8,7 +8,7 @@
 // let b =[20,10];
 
 // console.log(a[0]==b[1])    //o/p => true 
-// console.log(a[0]===b[0])   //o/p => false
+// console.log(a[0]===b[1])   //o/p => false
 
  
 
@@ -27,7 +27,7 @@
 // let f ={ name:"rahul"}
 
 // console.log(...e)  array distructuring
--->// if we check the type of array would not change if do impliment the spread oprater
+// if we check the type of array would not change if do impliment the spread oprater
 
  
 
@@ -53,9 +53,9 @@
 
 // let i =["rahul","mehul","keyur","ganu"];
 
-// let [...r]= i
+// let r = [...i]
 
-// console.log(r)
+// document.write(r)
 
  
 
@@ -66,7 +66,7 @@
 // var rrr = { ...info, ...detail };
 
 // console.log(rrr); //merge 2 object
-
+// document.write(rrr)
  
 
 // const info = { name: "rahul", age: 21, occupation: "backend engineer" };
@@ -520,15 +520,15 @@
 
 
 // get even and odd number from the array
-            const number =[7,55,1,2,6,9,8,2,3,4,85]
+            // const number =[7,55,1,2,6,9,8,2,3,4,85]
             
-            function gnretEven(arr){
-                const even =arr.filter((ele)=>ele%2===0)
-                const odd =arr.filter((ele)=>ele%2===1)
-                return 'this are even '+ even +'and this are odds'+odd
-            }
+            // function gnretEven(arr){
+            //     const even =arr.filter((ele)=>ele%2===0)
+            //     const odd =arr.filter((ele)=>ele%2===1)
+            //     return 'this are even '+ even +'and this are odds'+odd
+            // }
 
-            console.log( gnretEven(number))  
+            // console.log( gnretEven(number))  
 
 
       

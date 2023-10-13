@@ -3,13 +3,13 @@
 // Rest parameter
 
 // function add(a,b, ...arr){
-                                        //...argument last maj lakhay
-//     // console.log(arr);
-//      const result = arr.reduce((sum,curr)=> sum + curr,0)
+//                                        // ...argument last maj lakhay
+//      console.log(arr);
+//     const result = arr.reduce((sum,curr)=> sum + curr,0)
 
-// //      console.log(result)
+//       console.log(result)
 
-// //     // return a + b;
+//  return a + b;
 // }
 
 // // console.log(add(1,2,3,4,5,6,7,8,9))
@@ -17,20 +17,20 @@
 
 // // spead operator/syntax
 
-// let arr = [1,2,3,4,5,6,7,8,9,10];   //array mathi badhi value kadhva(spread karva)
+let arr = [1,2,3,4,5,6,7,8,9,10];   //array mathi badhi value kadhva(spread karva)
 
-// // let arr1 = [...arr];
+//let arr1 = [...arr];
 
-// // let obj = { ...arr}         //object ma pn chale 
+ //let obj = { ...arr}         //object ma pn chale 
 
-// // console.log(obj)
+ //console.log(obj)
 
-// // console.log(arr1)
+ //console.log(arr1)
 
 
-// console.log(...arr);
+//console.log(...arr);
 
-// console.log(Math.max(20, ...arr, 40))
+ console.log(Math.max(20, ...arr,10))
 
 
 

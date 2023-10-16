@@ -169,7 +169,7 @@
 // function hello(){   document.write('your welcome') }
 // hello()  //call the function
 
-//.......................          ..... what is perameter and argument
+//.................... ..... what is perameter and argument  ................................................
 
 // function hello(a,b) /* perameter*/{ 
 //     document.write(a+b)}
@@ -178,20 +178,39 @@
 
 //....................make arrithmatic quvations use of function perameter and arguments
 //...................problem take user input and make additiion uase of function
-// function hello(a,b){ //perameters
+// function hello(a,b){ //perameters .....................................
 
 //     document.write("Adition = "+(a+b) +"<br/>" )
-//     document.write("Subtraction = "+(a-b) +"<br/>" )
-// }
+//     document.write("Subtraction = "+(a-b) +"<br/>" ) }
 // var a = Number(window.prompt('enter value of a'));
 // var b = Number(window.prompt('enter value of b'));
-// hello(a,b) //arguments
+// hello(a,b) //arguments ............................................
+
+// nothing returned and less arguments .............................................
+// function sam1(num1 , num2){
+//     document.write(num1);  //30
+//     document.write(num2);}  //undefined
+
+//  document.write(sam1(30)); //kuch nhi return horha //undefined
+
+
+
+// default parameterised functions
+// function sam2(num1 , num2 = 40){ // default parameter
+//     document.write(num1);  
+//     document.write(num2);  
+// }
+// sam2(20);
+// sam2(20,50); 
+
 
 
 //..................... Array ..................................
 //......push pop... (add remove)............ array na last ma work kare
 //.....shift unshift .....(remove add)..... array na first ma work kare 
 //.length use for check length of array
+// slice method (1 , 4) [1,2, 3] sudhi lese and original array ma [1,2,3,4]  rakhse
+// spice method (1 , 4) [1,2, 3,4] sudhi consider karse and original array ma [1,2,3,4]  delete kari dese
 
 //a = ['hi' ,'hello']
 // a.push('km cho')
@@ -203,4 +222,169 @@
 // a.shift()                  // remove kare first element ne array mathi
 // document.write(a +"<br/>")
 
+// let arr= [1,2,3,4,5]
+// let arr1= arr.slice(1,3)      //[1,2 value lese 3 delete]
+// document.write(arr1 +"<br/>");
+// document.write(arr +"<br/>");  //actual array ma koi update nahi thay
+
+// let arr2= arr.splice(1,3)
+// document.write(arr2 +"<br/>");
+// document.write(arr +"<br/>");
+
+//................................ variable to array store ...................................
+// let a = 100;
+// let b= 200;
+// let c = 300;
+// document.write(Array.of(a, b,c));
+// console.log(Array.of(a, b,c));
+
 // document.write(a.length)
+//........................... Reverse Array ..............................................
+//  let arr2 = ['sam' , 'mohd' , 'hardik'];
+// document.write (arr2.reverse()+"<br/>");
+//  document.write(arr2);
+
+
+//.....................math function...........................................................
+// document.write(Math.PI);
+// document.write(Math.E);
+// document.write(Math.LN2);
+ //document.write(Math.sqrt(25));
+
+ // document.write(Math.min(12,4,5,10,8,19));
+// document.write(Math.max(12,4,5,10,8,19));
+
+// document.write(Math.round(1.5));
+// document.write(Math.round(10.49999999));
+//document.write(Math.round(10.54));
+
+// document.write(Math.ceil(10.00000009)+"<br/>"); //give nearest upper value
+// document.write(Math.floor(10.99999)+"<br/>");   //give nearest lower value bhale .99 hoy toy te increment nahi kare
+// document.write(Math.ceil(5.1)+"<br/>");         //give nearest upper value bhale .11 hoy
+// document.write(Math.floor(5.55)+"<br/>");   //give nearest lower value
+ //document.write(Math.abs(-5.55)+"<br/>");   //give negative to positive value (- to + me conversion)
+
+
+// let random = Math.random() * 10 ;  //.....0 to 1 ke under hi math.random generate karse
+// document.write(Math.floor(random)+"<br/>");
+
+// let ans = Math.floor(Math.random() * 6 + 22) ; 
+// document.write(ans);
+
+// ............................................ ARRAY METHODS LIKE FOREACH, MAP, FILTER, ..............................
+// forEach() --> methods (array).....................................................
+
+//  let students = ['apple ', 'pineaaple ' , 'grape ' ,  'mango ', 'guava'];
+
+//  students.forEach(function(item){
+//      document.write(item) })
+
+// students.forEach(function(sachin , manish){
+//     document.write(`index was ${manish} --> juice was ${sachin}`)
+// })
+
+
+
+// map() method  --> array
+
+// let marks = [10, 15, 18, 9, 28, 12, 5, 40];
+
+// let newMarksArray = marks.map(function(item , index){
+//     return [ item*2 , index ];
+// })
+// console.log(marks);
+// console.log(newMarksArray);
+
+
+// filter() method --> array
+// let marks = [1,2,3,4,5,6,7,8,9,10];
+
+// let filteredArray = marks.filter(function(item,index){
+//     if(item >= 5){
+//         // console.log(index)
+//         return true;
+//     }
+//     return false;
+// })
+// console.log(marks);
+// console.log(filteredArray);
+
+// sort() 
+// let arr = [16,12, 2, 34, 3, 88, 90, 36, 76];
+// // let arr = ['sam' , 'samarth' , 'aryan' , 'aarav' , 'ayush' ,'AArav','Ayush'];
+// let newArray = arr.sort(function(a,b){
+//     return a-b; //asc
+//     // return b-a; //desc
+// });
+// console.log(newArray);
+
+
+//.................................... OBJECT + THIS keyword   ........................................
+
+// using this keyword object mathi data laine add karvu
+// let obj2 = {
+//     naam : 'sam',
+//     naam: 'neel',
+//     evs : 90,
+//     cn  : 90,
+//     web : 100,
+//     maths :  10,
+//     total : function(){    //methods
+//         return (this.evs + this.cn + this.web + this.maths);
+//     },
+//     bulao : function(){
+//         return (`${this.naam} ko bulao`)
+//     }
+// }
+
+//document.write(obj2.total()  +"<br/>");
+// document.write(obj2.bulao());
+
+//.............. problem 2 of object ........................
+// let obj3 = {
+//     naam : 'sam',
+//     naam: 'neel',
+//     type1 : 'pen',
+//     type2  : 'tv',
+//     type3 : 'toy',
+//     type4 :  'book',
+//           item: function(){
+//            return ( this.type1  +" " + this.type3) +"<br/>"},
+//           neel: function(){
+//            return ( this.type1 +' neel pase che' + " " + this.type3)}
+// }
+// document.write(obj3.item());
+// document.write(obj3.neel());
+
+//....................................... SCOPE .{scope}.............................
+//.................... global scope .........................
+// var b = 10;
+// function fun(){
+//     let b =11;    //var value updated
+//     document.write(b +"<br/>") ;}  //block value .................... 
+// fun();
+// document.write(b);                //global value ...............................
+
+//.......................... block scope .....................
+// if (true) {
+//     let blockVar = "I'm a block-scoped variable";
+//     console.log(blockVar);
+//   }
+  
+  // Trying to access blockVar outside the block will result in an error
+//   console.log(blockVar); // Error: blockVar is not defined
+  
+
+//..................................... HOSTING ..........................................................
+// (when you access a varibale/function even before its declaration that variable is called hoisting )
+
+// console.log(a);  //accessing a variable  ans= undefined
+// meraFunc();  //accessing a function
+
+//function declaration
+// function meraFunc(){
+//     console.log('inside mera function')
+// }
+//variable declaration
+//var a = 20;  //undefined
+//let a =12;// not define error throw karese

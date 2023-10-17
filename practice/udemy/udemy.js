@@ -165,9 +165,28 @@
 //     }
 
 
-//................ How to create function in js
+//................ How to create function in js ..................................................
 // function hello(){   document.write('your welcome') }
 // hello()  //call the function
+
+//........................best method of use arrow fun without return key word..................................
+//       //   ...................mrthod 1.... { aa braket ma retun lakhvu pade}..............................
+// const two = (num1, num2)=>{
+//     return num1 + num2         //aa retun key word ne replace kari ne lakhva mate method 2 no use karvo
+// } 
+//  var first= Number(window.prompt('enter value (num1)'));
+//  var second=  Number(window.prompt('enter value (num2)'));
+// document.write(two(first, second))
+
+//........best method.............. method 2 ....(aa beaket ma direct perform kari sako)........................
+//  const two = (num1, num2)=>( num1 + num2 )       
+ 
+//  const two = (num1, num2)=>( {username: "neel"} )   // object mate     
+ 
+//  var first= Number(window.prompt('enter value (num1)'));
+//  var second=  Number(window.prompt('enter value (num2)'));
+// document.write(two(first, second))
+
 
 //.................... ..... what is perameter and argument  ................................................
 
@@ -320,6 +339,7 @@
 
 
 //.................................... OBJECT + THIS keyword   ........................................
+// arrow fun ma this key word na chale
 
 // using this keyword object mathi data laine add karvu
 // let obj2 = {
@@ -362,7 +382,7 @@
 // function fun(){
 //     let b =11;    //var value updated
 //     document.write(b +"<br/>") ;}  //block value .................... 
-// fun();
+//         fun();
 // document.write(b);                //global value ...............................
 
 //.......................... block scope .....................
@@ -388,3 +408,16 @@
 //variable declaration
 //var a = 20;  //undefined
 //let a =12;// not define error throw karese
+
+
+// .....................IIFE ...();........................................................................................
+//.........Immediately Invoke Function Expression ......
+
+// (       function neel(){
+//     document.write(`DB CONNECTED`);} 
+// ) ()
+
+// (      (NAME)=>{
+//     document.write(NAME +" "+ 'DB CONNECTED');} 
+// ) ('NEEL') 
+

@@ -146,18 +146,26 @@
 
 // var a = (window.prompt('enter alphabet'));
 // switch(a){
-//     case 'b':
-//     case 'B':
+//     case 'a':
+//     case 'A':
 //         document.write('It is Vowel')
 //     break;
     
-//     case 'c':
-//     case 'C':
+//     case 'e':
+//     case 'E':
 //         document.write('It is Vowel')
 //     break;
     
-//     case 'd':
-//     case 'D':
+//     case 'i':
+//     case 'I':
+//         document.write('It is Vowel')
+//     break;
+//     case 'o':
+//     case 'O':
+//         document.write('It is Vowel')
+//     break;
+//     case 'u':
+//     case 'U':
 //         document.write('It is Vowel')
 //     break;
 //     default:

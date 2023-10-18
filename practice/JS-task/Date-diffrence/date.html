@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATE CALCULATE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"crossorigin="anonymous" />
+  </head>
+  <body class="bg-warning">
+    <div class="card container  border-secondary mt-4">
+        <div class="card-header text-center bg-primary text-white mt-">
+            Date Difference
+        </div>
+        <div class="card-body text-center  text-white">
+            <input type="date" name="date" class="mb-4" id="date" placeholder="Enter your date"><br>
+    
+            <input type="date" name="date1" class="mb-4" id="date1" value="1/14/2024" placeholder="enter value"><br>
+            <button onclick="age()" type="button" class="btn btn-info text-white bg-success" id="button">Calculate Difference</button>
+        </div>
+    </div>
+    <script>
+        function age() {
+            const date1 = document.getElementById('date').value;
+            const date2 = document.getElementById('date1').value;
+    
+            const start = new Date(date1).getTime();
+            const end = new Date(date2).getTime();
+    
+            const difference = end - start;
+            const differencedays = Math.round(difference / (1000 * 60 * 60 * 24));
+    
+            document.getElementById('button').innerHTML = 'Gap between these two dates is ' + differencedays + ' days';
+        }
+    </script>
+    
+  </body>
+</html>

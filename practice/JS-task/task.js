@@ -52,7 +52,7 @@
             //  }       //.....................................................................
             
 
-            
+
             // let nam =  'the quick brown fox' ;
             // document.write(nam + '<br/>');
             
@@ -90,12 +90,35 @@
 
 //4. Write a JavaScript program to calculate number of days left until next Uttrayan........................................
 
+   
+        // function calculateDaysLeft() {
+        //     var today = new Date();
+        //     var uttrayanDate = new Date(today.getFullYear(), 0, 14); 
+        //     if (today > uttrayanDate) {
+        //         uttrayanDate.setFullYear(uttrayanDate.getFullYear() + 1); // If Uttrayan has already passed this year, set it for the next year
+        //     }
+
+        //     var daysLeft = Math.ceil((uttrayanDate - today) / (1000 * 60 * 60 * 24)); // Calculate the number of days left
+
+        //     return daysLeft;
+        // }
+
+        // document.getElementById("countdown").textContent = "Days left until Uttrayan: " + calculateDaysLeft();
+
 
 
 //5. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
 // index.html ma che
 
-
+//6. Write a JavaScript program that accept two integers and display the larger.
+// var a = Number(window.prompt('enter first number'));
+// var b = Number(window.prompt('enter second number'));
+// if(a>b){
+//     alert(" your first value is bigger "+a);
+// }
+// else{
+//     alert("your second value is bigger "+b);
+// }
 
 // 7. Write a simple JavaScript program to join all elements of the following array into a string.
 //var Input = ["Red", "Green", "White", "Black"]; 
@@ -184,8 +207,10 @@
 
 
 // 14. Write a JavaScript program to calculate age.
-
+//done
 
 // 15. Write a JavaScript function to get time differences in days between two dates.
 
-//16. Write a program for calculator.
+
+//16. Write a program for calculator. 
+//done

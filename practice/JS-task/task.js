@@ -168,6 +168,16 @@
 // "2nd choice is Green." 
 // "3rd choice is Red." ...
 
+const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+const ordinalSuffix = ["th", "st", "nd", "rd"];
+
+for (let i = 0; i < colors.length; i++) {
+    const ordinal = i < 3 ? ordinalSuffix[i + 1] : ordinalSuffix[0];
+    const output = i + 1 + ordinal + " choice is " + colors[i] + ".";
+    document.write(output + "<br/>"); // You can also use alert or document.write to display on the page.
+}
+
+
 
 // 10. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
 // Sample Output : 
